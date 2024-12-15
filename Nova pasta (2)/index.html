@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Bio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nome site</h1>
+    </header>
+
+    <h1>Part Introdução</h1>
+    <p>////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
+    <p>////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
+    <p>////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
+    <p>////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
+
+    <div class="container">
+        <!-- Carrossel -->
+        <div class="carousel">
+            <div class="carousel-images">
+                <div class="carousel-item" onclick="showDetailedText(1)">
+                    <img src="https://th.bing.com/th/id/OIP.Os8iQget9WfmuG61JgywXwHaHe?rs=1&pid=ImgDetMain" alt="Imagem 1">
+                    <div class="carousel-text">Caneta Azul</div>
+                </div>
+                <div class="carousel-item" onclick="showDetailedText(2)">
+                    <img src="https://th.bing.com/th/id/OIP.5wpNGDLJfLh_7vaz8tEyMQHaEK?w=303&h=180&c=7&r=0&o=5&pid=1.7" alt="Imagem 2">
+                    <div class="carousel-text">Olha, Se Você Não Me Ama</div>
+                </div>
+                <div class="carousel-item" onclick="showDetailedText(3)">
+                    <img src="https://i.ytimg.com/vi/7HUmu1uDRQo/maxresdefault.jpg" alt="Imagem 3">
+                    <div class="carousel-text">Parabéns</div>
+                </div>
+            </div>
+            <div class="carousel-buttons">
+                <button id="prev">◀</button>
+                <button id="next">▶</button>
+            </div>
+        </div>
+
+        <!-- Texto detalhado -->
+        <div id="detailed-text" class="detailed-text"></div>
+    </div>
+
+    <footer>
+        <p>&copy; Projeto Bio IFRN</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
