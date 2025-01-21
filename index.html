@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de Projetos</title>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gerenciamento de Projetos</h1>
+        <nav>
+            <ul>
+                <li><a href="#equipes">Equipes</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#tarefas">Tarefas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="equipes">
+            <h2>Criar e Gerenciar Equipes</h2>
+            <form id="form-criar-equipe">
+                <label for="nome-equipe">Nome da Equipe:</label>
+                <input type="text" id="nome-equipe" required>
+                <button type="submit">Criar Equipe</button>
+            </form>
+            <div id="lista-equipes">
+                <h3>Equipes Criadas</h3>
+                <ul></ul>
+            </div>
+
+            <!-- Formulário para adicionar membros -->
+            <h3>Adicionar Membros à Equipe</h3>
+            <form id="form-adicionar-membro">
+                <label for="nome-membro">Nome do Membro:</label>
+                <input type="text" id="nome-membro" required>
+                <label for="cargo-membro">Cargo:</label>
+                <input type="text" id="cargo-membro" required>
+                <label for="equipe-membro">Equipe:</label>
+                <select id="equipe-membro"></select>
+                <button type="submit">Adicionar Membro</button>
+            </form>
+        </section>
+
+        <section id="projetos">
+            <h2>Criar e Gerenciar Projetos</h2>
+            <form id="form-criar-projeto">
+                <label for="nome-projeto">Nome do Projeto:</label>
+                <input type="text" id="nome-projeto" required>
+
+                <label for="descricao-projeto">Descrição:</label>
+                <input type="text" id="descricao-projeto" required>
+
+                <label for="equipe-projeto">Equipe:</label>
+                <select id="equipe-projeto"></select>
+
+                <label for="data-inicial">Data Inicial:</label>
+                <input type="date" id="data-inicial" required>
+
+                <label for="data-final">Data Final:</label>
+                <input type="date" id="data-final" required>
+
+                <button type="submit">Criar Projeto</button>
+            </form>
+            <div id="lista-projetos">
+                <h3>Projetos Criados</h3>
+                <ul></ul>
+            </div>
+        </section>
+
+        <section id="tarefas">
+            <h2>Criar e Gerenciar Tarefas</h2>
+            <form id="form-criar-tarefa">
+                <label for="descricao-tarefa">Descrição da Tarefa:</label>
+                <input type="text" id="descricao-tarefa" required>
+
+                <label for="prazo-tarefa">Prazo:</label>
+                <input type="date" id="prazo-tarefa" required>
+
+                <label for="prioridade-tarefa">Prioridade:</label>
+                <select id="prioridade-tarefa">
+                    <option value="alta">Alta</option>
+                    <option value="media">Média</option>
+                    <option value="baixa">Baixa</option>
+                </select>
+
+                <label for="projeto-tarefa">Projeto:</label>
+                <select id="projeto-tarefa"></select>
+
+                <label for="membro-tarefa">Membro:</label>
+                <select id="membro-tarefa"></select>
+
+                <button type="submit">Criar Tarefa</button>
+            </form>
+            <div id="lista-tarefas">
+                <h3>Tarefas Criadas</h3>
+                <ul></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sistema de Gerenciamento de Projetos</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
